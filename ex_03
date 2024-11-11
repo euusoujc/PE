@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+    int n, fat;
+    printf("Digite um número: ");
+    scanf("%d", &n);
+
+    for (fat = 1; n > 0; n--) {
+        fat *= n;
+    }
+    
+    printf("Fatorial = %d\n", fat);
+    return 0;
+}
